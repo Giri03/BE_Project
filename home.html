@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<title>
+		DROUGHT PREDICTION
+		</title>
+			
+		<style>
+			.login-box{
+			background-color: rgba(220, 225,225,0.4);
+			}
+			<style type="text/css">
+.body{
+text-align:right;
+html{    background:url("/img/project_pics/Banner_login.jpg") no-repeat  fixed;
+ -webkit-background-size: cover;
+height:100%;
+background-position: 0% 25%;
+    background-size: cover;
+	height: 640px;
+    color: white; 
+    text-shadow: black 0.3em 0.3em 0.3em;
+	}
+}
+}
+		</style>
+	</head>
+	<body>
+<header class='navbar navbar-empty'>
+<div class='container' >
+<div>
+
+</div>
+
+</div>
+<hr class="divider">
+</header>
+
+	<div class="container">
+	    
+        <div id="home" style="margin-top:10px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Select District</div>
+                      </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                            
+                        <form id="loginform" method="POST" action="main.php" onsubmit="return loginValidate(this)" class="form-horizontal">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+											 <select name="district" id="district" class="form-control">
+												<option value="All_Districts">All Districts</option>
+												<option value="Aurangabad">Aurangabad</option>
+												<option value="Latur">Latur</option>
+												<option value="Jalna">Jalna</option>
+												<option value="Parbhani">Parbhani</option>
+												<option value="Beed">Beed</option>
+												<option value="Hingoli">Hingoli</option>
+												<option value="Nanded">Nanded</option>
+												<option value="Osmanabad">Osmanabad</option>
+											  </select>
+																					
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+										 <input type="date" name="year" placeholder="enter date" class="form-fromdate form-control" id="form-fromdate" min="2019-01-01"max="2025-12-31">
+                                    </div>
+                                   
+                            
+
+
+                   				<div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                     
+									  <button type="reset" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span>Cancel</button> 
+                                      <button id="btn-login" href="main.php" type="submit" class="btn btn-success" name="submit"><span class="glyphicon glyphicon-arrow-right"></span>Submit</button>
+                                      
+                                    </div>                    </div>  
+        </div>
+        
+                                     
+                                
+                                </div>
+                   				
+
+                                   </form> 
+                                    </div>
+                                </div>    
+                             
+
+
+
+                        </div>                     
+
+            
+</body>
+
+</html>
